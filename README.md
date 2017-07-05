@@ -2,6 +2,9 @@
 
 ## Scenario:
 
+    Usage: ./moneybird.rbx <inputfile> <batchname> [-f]"
+
+
 Vanuit Rabobank telebankieren kan ik de CC transacties als text kopieeren: b.v:
 
     30-06-2017	ITUNES.COM/BILL ITUNES.COM IRL	€	12,97	 
@@ -10,9 +13,11 @@ Vanuit Rabobank telebankieren kan ik de CC transacties als text kopieeren: b.v:
     14-06-2017	RICOH IMAGING ONLINEST TOKYO JPN
     Valuta: USD 518,72 Koers: 1,089175853	€	476,25
 
-Copieer deze in het tekst bestand `transactions.txt`
+Copieer deze in het tekst bestand `transactions.txt` (of een andere naam)
 
-run `./moneybird.rbx` vanaf de commandline.
+run `./moneybird.rbx transactions.txt "CC Mei"` vanaf de commandline.
+
+voeg `-f` toe om daadwerkelijk te posten
 
 voila!
 
