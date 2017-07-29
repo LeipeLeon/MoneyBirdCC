@@ -78,7 +78,7 @@ File.open(inputfile, 'r') do |f|
     # 03-07-2017	AMAZON MKTPLACE PMTS AMAZON.COM GBR	€	98,39
     date_or_text, txt_or_currency, currency_or_amount, amount = line.strip.split("\t")
     if /(?<day>\d{2})-(?<month>\d{2})-(?<year>\d{4})/ =~ date_or_text
-      next if txt_or_currency =~ /INCASSO/
+      amount = amount.gsub('-','') if txt_or_currency =~ /INCASSO/
       mutations << Mutation.new(day, month, year, txt_or_currency, currency_or_amount, "-%s" % amount)
     else # It's a text line
       mutations.last.add(date_or_text, txt_or_currency, "-%s" % currency_or_amount)
