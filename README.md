@@ -19,7 +19,7 @@ run `./moneybird.rbx transactions.txt "CC Mei"` vanaf de commandline.
 
 voeg `-f` toe om daadwerkelijk te posten
 
-voila!
+Voor het tegen elkaar weg boeken van stortingen maak een hulprekening "CreditCard afrekening" aan en gebruik deze bij het koppelen van de bedragen. (de `INCASSO - VORIG OVERZICHT` op de cc rekening en de afschrijving van de bank zelf)
 
 ## Setup
 
