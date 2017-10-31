@@ -64,7 +64,7 @@ class Mutation
 
   def to_hash
     {
-      date: "%4d-%02d-%02d" % [@year, @month, @day],
+      date: "%4d-%02d-%02d" % [@year.to_i, @month.to_i, @day.to_i],
       message: @txt.join(' '),
       amount: @amount
     }
